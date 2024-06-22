@@ -13,6 +13,6 @@ jobs:
       contents: read
       packages: write
     steps:
-      - run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login gchr.io -u ${{ github.actor}} --password-stdin
-      - run: docker build -t gchr.io/${{ github.repository }}:latest .
-      - run: docker push gchr.io/${{ github.repository }}:latest
+      - run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor}} --password-stdin
+      - run: docker build -t ghcr.io/${{ github.repository }}:latest .
+      - run: docker push ghcr.io/${{ github.repository }}:latest

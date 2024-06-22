@@ -1,6 +1,6 @@
 module github.com/davidyagoo/cicdhandson
 
-go 1.22.4
+go 1.22.2
 
 require (
 	github.com/bytedance/sonic v1.9.1 // indirect
